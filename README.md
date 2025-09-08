@@ -1,6 +1,6 @@
 # Cloud DB Access on TOIT
 
-Below description of modified application https://github.com/mk590901/toit-rest-api. The application additionally saves meteo information to the cloud in Firebase Realtime Database.
+Below description of modified application https://github.com/mk590901/toit-rest-api. The application additionally saves meteo information to the cloud in __Firebase Realtime Database__.
 
 ## Introduction
 
