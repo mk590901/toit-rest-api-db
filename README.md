@@ -19,12 +19,15 @@ There are two things to pay attention to in the application:
 The application consists of two parts:
 > MQTT client in the _mqtt_bridge.toit_ file, which allows
 * Receive data for a request pair [city, country code]. For example, "Tokyo, JP", "Jerusalem, IL" or "Rovaniemi, FI", 
-* Create and execute a request using the __doneRequest__ function and send the received weather data to the desired topic via the MQTT bridge.
-> The __doneRequest__ function, in the _weather.toit_ file, which receives data for a request and returns a json string with current weather data.
+* Create and execute a request using the __doneRequest__ function and send the received weather data to the desired topic via the __MQTT__ bridge.
+* By means __getJson__ function to get a __json object__ that contains data to add to the __Firebase Realtime Database__.
+* Finally, the __send_firebase__ function performs posting data to add them to the cloud.
+> The __doneRequest__ function, in the _weather.toit_ file, which receives data for a request and returns a json string with current weather data. In parallel, this function generates data in a form suitable for storage in the __Firebase Realtime Database__. 
 
 NB! Details on using __HTTP__ requests in __TOIT__ can be found at https://docs.toit.io/tutorials/network/http.
 
-[weather.webm](https://github.com/user-attachments/assets/07172905-7f2b-4f62-ae97-89b6d4c27dc2)
+[firebase.webm](https://github.com/user-attachments/assets/dd140081-9d7a-44fa-bfb2-66d51f8050b2)
+
 
 ## Application management
 
