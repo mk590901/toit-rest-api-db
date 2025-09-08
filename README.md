@@ -12,7 +12,7 @@ This saved data is shown below in the movie on the __Firebase console__.
 
 There are two things to pay attention to in the application:
 * Construction of a json object for sending to the DB: several procedures in the __utils.toit__ file, which are used after receiving weather data in __weather.toit__ module.
-* The __send_firebase__ procedure, which implements sending data to __Firebase Realtime Database__.
+* The __send_firebase__ procedure in __firebase.toit__ file, which implements sending data to __Firebase Realtime Database__.
 
 ## Implementation
 
